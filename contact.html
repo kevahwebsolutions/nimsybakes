@@ -35,6 +35,9 @@
 	<link href="//fonts.googleapis.com/css?family=Barlow+Semi+Condensed:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&amp;subset=latin-ext"
 	    rel="stylesheet">
 	<!-- //Web-Fonts -->
+	 <!-- Favicon -->
+	<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+	<!-- //Favicon -->
 
 </head>
 
@@ -101,8 +104,7 @@
 								<span class="fa fa-phone" aria-hidden="true"></span>
 							</div>
 							<div class="col-10 address-right">
-								<p> +254 716 1680 80</p>
-								<p></p>
+								<a href="tel:+254716168080">+254 716 1680 80</a>
 							</div>
 						</div>
 						<div class="row wthree-address-grid">
@@ -132,11 +134,14 @@
 				</div>
 				<div class="contact-right-grid">
 					<div class="wthree-contact-form">
-						<form action="#" method="post">
-							<input type="text" name="Name" placeholder="Name" required="">
-							<input type="email" class="email" name="Email" placeholder="Email" required="">
-							<input type="text" name="Name" placeholder="Subject" required="">
-							<textarea name="Message" placeholder="Message" required=""></textarea>
+						<form action="https://api.web3forms.com/submit" method="post">
+							<!-- Replace with your Access Key -->
+							<input type="hidden" name="access_key" value="d908c574-d85a-4574-806b-e7972dc0711c">
+							<input type="text" name="Name" placeholder="Name" required>
+							<input type="email" name="Email" placeholder="Email" required>
+							<input type="text" name="Phone" placeholder="Phone" required>
+							<input type="text" name="Subject" placeholder="Subject" required>
+							<textarea name="Message" placeholder="Message" required></textarea>
 							<input type="submit" value="SUBMIT">
 						</form>
 					</div>
@@ -168,23 +173,8 @@
 			<div class="footercopy-social py-3">
 				<ul>
 					<li>
-						<a href="#">
+						<a href="https://www.facebook.com/p/Nimsy-Bakes-100069902658293/">
 							<span class="fab fa-facebook-f"></span>
-						</a>
-					</li>
-					<li class="mx-2">
-						<a href="#">
-							<span class="fab fa-twitter"></span>
-						</a>
-					</li>
-					<li>
-						<a href="#">
-							<span class="fas fa-rss"></span>
-						</a>
-					</li>
-					<li class="ml-2">
-						<a href="#">
-							<span class="fab fa-vk"></span>
 						</a>
 					</li>
 				</ul>
@@ -218,12 +208,12 @@
 					</li>
 					<li class="mx-4">
 						<p class="text-white">
-							<i class="fas fa-phone mr-2"></i>+254716168080</p>
+							<i class="fas fa-phone mr-2"></i><a href="tel:+254716168080" class="text-white">+254716168080</a></p>
 					</li>
 					<li>
 						<p class="text-white">
 							<i class="far fa-envelope-open mr-2"></i>
-							<a href="mailto:info@example.com" class="text-white">nashlizz63@gmail.com</a>
+							<a href="nashlizz63@gmail.com" class="text-white"> nashlizz63@gmail.com</a>
 						</p>
 					</li>
 				</ul>
@@ -236,7 +226,7 @@
 	<!-- copyright -->
 	<div class="w3l-copy text-center py-4">
 		<p class="text-white">© 2024 NIMSY BAKES. All rights reserved | Design by
-			<a href="https://kevahwebsolutions.github.io/.co.ke/">KEVAH WEB SOLUTIONS</a>
+			<a href="https://kevahwebsolutions.github.io/kelvin-njoroge.com/">KELVIN NJOROGE</a>
 		</p>
 	</div>
 	<!-- //copyright -->
@@ -277,7 +267,7 @@
 			"backgroundColor":"#00e785",
 			"ctaText":"Chat with us",
 			"borderRadius":"25",
-			"marginLeft": "0",
+			"marginLeft": "20",
 			"marginRight": "20",
 			"marginBottom": "20",
 			"ctaIconWATI":false,

@@ -35,6 +35,79 @@
 	<link href="//fonts.googleapis.com/css?family=Barlow+Semi+Condensed:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&amp;subset=latin-ext"
 	    rel="stylesheet">
 	<!-- //Web-Fonts -->
+     <!-- Favicon -->
+	<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+	<!-- //Favicon -->
+     <!-- CSS -->
+<style>
+    .menu-section {
+        padding: 50px;
+        background-color: #f4f4f4;
+    }
+    .container {
+        max-width: 1200px;
+        margin: auto;
+    }
+    .text-center {
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    .menu-category {
+        margin-bottom: 40px;
+    }
+    .menu-category h3 {
+        font-size: 24px;
+        margin-bottom: 20px;
+        border-bottom: 2px solid #e0e0e0;
+        padding-bottom: 10px;
+        color: #333;
+    }
+    .product-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        grid-gap: 20px;
+    }
+    .product-item {
+        background: white;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        text-align: center;
+    }
+    .product-item h4 {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+    .product-item p {
+        margin: 0;
+        font-size: 16px;
+        color: #666;
+    }
+    .product-image {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+        margin-bottom: 10px;
+        max-width: 200px; /* Set a maximum width for images */
+        object-fit: cover; /* Ensure the image covers the area while maintaining aspect ratio */
+    }
+
+    /* Responsive Styles */
+    @media (max-width: 768px) {
+        .menu-category h3 {
+            font-size: 20px;
+        }
+        .product-item h4 {
+            font-size: 16px;
+        }
+        .product-item p {
+            font-size: 14px;
+        }
+        .product-image {
+            max-width: 150px; /* Adjust image size for smaller screens */
+        }
+    }
+</style>
 
 </head>
 
@@ -85,307 +158,148 @@
 	</div>
 	<!-- //banner -->
 
-	<!--menu -->
-<div class="section main-menu py-5">
-    <div class="container py-xl-5 py-lg-3">
-        <div class="title-heading text-center mb-sm-5 mb-4">
-            <h3 class="title text-capitalize text-dark">Our Menu</h3>
-            <p class="title-text font-weight-light font-italic mt-2"></p>
+<!-- Menu Section -->
+<div class="menu-section" style="padding: 50px; background-color: #f4f4f4;">
+    <div class="container">
+        <h2 class="text-center">Our Menu</h2>
+
+        <!-- Flavoured Cakes Category -->
+        <div class="menu-category">
+            <h3 class="text-center">Flavoured Cakes</h3>
+            <div class="product-grid">
+                <!-- Vanilla Cake -->
+                <div class="product-item">
+                    <img src="images/10.jpg" alt="Vanilla Cake" class="product-image">
+                    <h4>Vanilla Cake</h4>
+                    <p>Soft Icing: Ksh. 2,000</p>
+                    <p>Hard Icing: Ksh. 2,500</p>
+                    <a href="https://wa.link/52g7l5" class="order-now-btn" style="font-weight: bold;" target="_blank">Order Now</a>
+                </div>
+                <!-- Red Velvet Cake -->
+                <div class="product-item">
+                    <img src="images/11.jpg" alt="Red Velvet Cake" class="product-image">
+                    <h4>Red Velvet Cake</h4>
+                    <p>Price: Ksh. 2,200</p>
+                    <a href="https://wa.link/52g7l5" class="order-now-btn" style="font-weight: bold;" target="_blank">Order Now</a>
+                </div>
+                <!-- Chocolate Cake -->
+                <div class="product-item">
+                    <img src="images/30.jpg" alt="Chocolate Cake" class="product-image">
+                    <h4>Chocolate Cake</h4>
+                    <p>Price: Ksh. 2,200</p>
+                    <a href="https://wa.link/52g7l5" class="order-now-btn" style="font-weight: bold;" target="_blank">Order Now</a>
+                </div>
+            </div>
         </div>
-        <ul class="nav nav-tabs" id="myTab" role="tablist">
-            <li class="nav-item">
-                <a class="nav-link active" id="flavoured-cakes-tab" data-toggle="tab" href="#flavoured-cakes" role="tab" aria-controls="flavoured-cakes" aria-selected="true">Flavoured Cakes</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" id="fruit-cake-tab" data-toggle="tab" href="#fruit-cake" role="tab" aria-controls="fruit-cake" aria-selected="false">Fruit Cake</a>
-            </li>
-        </ul>
-        <div class="tab-content" id="myTabContent">
-            <div class="tab-pane fade show active" id="flavoured-cakes" role="tabpanel" aria-labelledby="flavoured-cakes-tab">
-                <div class="d-flex border-bottom">
-                    <div class="col-md-6 agileinfo-tab-content1 border-right">
-                        <div class="menu-text-right1">
-                            <div class="menu-title">
-                                <h4>Vanilla</h4>
-                            </div>
-                            <div class="menu-price">
-                                <h4 class="price-clr">Ksh. 2,000</h4>
-                            </div>
-                            <div class="clearfix"></div>
-                            <p>With Soft Icing</p>
-                        </div>
-                    </div>
-                    <div class="col-md-6 agileinfo-tab-content1">
-                        <div class="menu-text-right1">
-                            <div class="menu-title">
-                                <h4>Vanilla</h4>
-                            </div>
-                            <div class="menu-price">
-                                <h4 class="price-clr">Ksh. 2,500</h4>
-                            </div>
-                            <div class="clearfix"></div>
-                            <p>With Hard Icing</p>
-                        </div>
-                    </div>
+
+        <!-- Fruit Cakes Category -->
+        <div class="menu-category">
+            <h3 class="text-center">Fruit Cakes</h3>
+            <div class="product-grid">
+                <!-- Orange Cake -->
+                <div class="product-item">
+                    <img src="images/13.jpg" alt="Orange Cake" class="product-image">
+                    <h4>Orange Cake</h4>
+                    <p>Soft Icing: Ksh. 2,000</p>
+                    <p>Hard Icing: Ksh. 2,500</p>
+                    <a href="https://wa.link/52g7l5" class="order-now-btn" style="font-weight: bold;" target="_blank">Order Now</a>
                 </div>
-				<div class="d-flex border-bottom">
-                    <div class="col-md-6 agileinfo-tab-content1 border-right">
-                        <div class="menu-text-right1">
-                            <div class="menu-title">
-                                <h4>Red Velvet</h4>
-                            </div>
-                            <div class="menu-price">
-                                <h4 class="price-clr">Ksh. 2,200</h4>
-                            </div>
-                            <div class="clearfix"></div>
-                            <p></p>
-                        </div>
-                    </div>
-                    <div class="col-md-6 agileinfo-tab-content1">
-                        <div class="menu-text-right1">
-                            <div class="menu-title">
-                                <h4>Chocolate</h4>
-                            </div>
-                            <div class="menu-price">
-                                <h4 class="price-clr">Ksh. 2,200</h4>
-                            </div>
-                            <div class="clearfix"></div>
-                            <p></p>
-                        </div>
-                    </div>
-                </div> 
+                <!-- Lemon Cake -->
+                <div class="product-item">
+                    <img src="images/14.jpg" alt="Lemon Cake" class="product-image">
+                    <h4>Lemon Cake</h4>
+                    <p>Soft Icing: Ksh. 2,000</p>
+                    <p>Hard Icing: Ksh. 2,500</p>
+                    <a href="https://wa.link/52g7l5" class="order-now-btn" style="font-weight: bold;" target="_blank">Order Now</a>
+                </div>
+                <!-- Pineapple Cake -->
+                <div class="product-item">
+                    <img src="images/15.jpg" alt="Pineapple Cake" class="product-image">
+                    <h4>Pineapple Cake</h4>
+                    <p>Soft Icing: Ksh. 2,000</p>
+                    <p>Hard Icing: Ksh. 2,500</p>
+                    <a href="https://wa.link/52g7l5" class="order-now-btn" style="font-weight: bold;" target="_blank">Order Now</a>
+                </div>
+                <!-- Strawberry Cake -->
+                <div class="product-item">
+                    <img src="images/16.jpg" alt="Strawberry Cake" class="product-image">
+                    <h4>Strawberry Cake</h4>
+                    <p>Soft Icing: Ksh. 2,000</p>
+                    <p>Hard Icing: Ksh. 2,500</p>
+                    <a href="https://wa.link/52g7l5" class="order-now-btn" style="font-weight: bold;" target="_blank">Order Now</a>
+                </div>
+                <!-- Pinacolada Cake -->
+                <div class="product-item">
+                    <img src="images/17.jpg" alt="Pinacolada Cake" class="product-image">
+                    <h4>Pinacolada Cake</h4>
+                    <p>Soft Icing: Ksh. 2,200</p>
+                    <p>Hard Icing: Ksh. 2,700</p>
+                    <a href="https://wa.link/52g7l5" class="order-now-btn" style="font-weight: bold;" target="_blank">Order Now</a>
+                </div>
+                <!-- Blueberry Cake -->
+                <div class="product-item">
+                    <img src="images/18.jpg" alt="Blueberry Cake" class="product-image">
+                    <h4>Blueberry Cake</h4>
+                    <p>Soft Icing: Ksh. 2,200</p>
+                    <p>Hard Icing: Ksh. 2,700</p>
+                    <a href="https://wa.link/52g7l5" class="order-now-btn" style="font-weight: bold;" target="_blank">Order Now</a>
+                </div>
+                <!-- Lemon Coconut Cake -->
+                <div class="product-item">
+                    <img src="images/19.jpg" alt="Lemon Coconut Cake" class="product-image">
+                    <h4>Lemon Coconut Cake</h4>
+                    <p>Soft Icing: Ksh. 2,200</p>
+                    <p>Hard Icing: Ksh. 2,700</p>
+                    <a href="https://wa.link/52g7l5" class="order-now-btn" style="font-weight: bold;" target="_blank">Order Now</a>
+                </div>
+                <!-- Lemon Blueberry Cake -->
+                <div class="product-item">
+                    <img src="images/20.jpg" alt="Lemon Blueberry Cake" class="product-image">
+                    <h4>Lemon Blueberry Cake</h4>
+                    <p>Soft Icing: Ksh. 2,300</p>
+                    <p>Hard Icing: Ksh. 2,900</p>
+                    <a href="https://wa.link/52g7l5" class="order-now-btn" style="font-weight: bold;" target="_blank">Order Now</a>
+                </div>
+                <!-- Fruit Cake -->
+                <div class="product-item">
+                    <img src="images/21.jpg" alt="Fruit Cake" class="product-image">
+                    <h4>Fruit Cake</h4>
+                    <p>Soft Icing: Ksh. 2,800</p>
+                    <p>Hard Icing: Ksh. 3,300</p>
+                    <a href="https://wa.link/52g7l5" class="order-now-btn" style="font-weight: bold;" target="_blank">Order Now</a>
+                </div>
             </div>
-            <div class="tab-pane fade" id="fruit-cake" role="tabpanel" aria-labelledby="fruit-cake-tab">
-                <div class="d-flex border-bottom">
-                    <div class="col-md-6 agileinfo-tab-content1 border-right">
-                        <div class="menu-text-right1">
-                            <div class="menu-title">
-                                <h4>Orange</h4>
-                            </div>
-                            <div class="menu-price">
-                                <h4 class="price-clr">Ksh. 2,000</h4>
-                            </div>
-                            <div class="clearfix"></div>
-                            <p>Soft Icing</p>
-                        </div>
-                    </div>
-                    <div class="col-md-6 agileinfo-tab-content1">
-                        <div class="menu-text-right1">
-                            <div class="menu-title">
-                                <h4>Orange</h4>
-                            </div>
-                            <div class="menu-price">
-                                <h4 class="price-clr">Ksh. 2,500</h4>
-                            </div>
-                            <div class="clearfix"></div>
-                            <p>Hard Icing</p>
-                        </div>
-                    </div>
+        </div>
+
+        <!-- Others Category -->
+        <div class="menu-category">
+            <h3 class="text-center">Others</h3>
+            <div class="product-grid">
+                <!-- Cupcakes -->
+                <div class="product-item">
+                    <img src="images/w1.png" alt="Cupcakes" class="product-image">
+                    <h4>Cupcakes</h4>
+                    <p>Half Dozen - Price: Ksh. 750</p>
+                    <p>Dozen - Price: Ksh. 1,200</p>
+                    <p>Customized - Price: Ksh. 2,000</p>
+                    <a href="https://wa.link/52g7l5" class="order-now-btn" style="font-weight: bold;" target="_blank">Order Now</a>
                 </div>
-                <div class="d-flex border-bottom">
-                    <div class="col-md-6 agileinfo-tab-content1 border-right">
-                        <div class="menu-text-right1">
-                            <div class="menu-title">
-                                <h4>Lemon</h4>
-                            </div>
-                            <div class="menu-price">
-                                <h4 class="price-clr">Ksh. 2,000</h4>
-                            </div>
-                            <div class="clearfix"></div>
-                            <p>Soft Icing</p>
-                        </div>
-                    </div>
-                    <div class="col-md-6 agileinfo-tab-content1">
-                        <div class="menu-text-right1">
-                            <div class="menu-title">
-                                <h4>Lemon</h4>
-                            </div>
-                            <div class="menu-price">
-                                <h4 class="price-clr">Ksh. 2,500</h4>
-                            </div>
-                            <div class="clearfix"></div>
-                            <p>Hard Icing</p>
-                        </div>
-                    </div>
+                <!-- Cookies -->
+                <div class="product-item">
+                    <img src="images/cookie.jpg" alt="Cookies" class="product-image">
+                    <h4>Cookies</h4>
+                    <p>20 Pieces - Price: Ksh. 750</p>
+                    <p>40 Pieces - Price: Ksh. 1,500</p>
+                    <a href="https://wa.link/52g7l5" class="order-now-btn" style="font-weight: bold;" target="_blank">Order Now</a> 
                 </div>
-				<div class="d-flex border-bottom">
-                    <div class="col-md-6 agileinfo-tab-content1 border-right">
-                        <div class="menu-text-right1">
-                            <div class="menu-title">
-                                <h4>Pineapple</h4>
-                            </div>
-                            <div class="menu-price">
-                                <h4 class="price-clr">Ksh. 2,000</h4>
-                            </div>
-                            <div class="clearfix"></div>
-                            <p>Soft Icing</p>
-                        </div>
-                    </div>
-                    <div class="col-md-6 agileinfo-tab-content1">
-                        <div class="menu-text-right1">
-                            <div class="menu-title">
-                                <h4>Pineapple</h4>
-                            </div>
-                            <div class="menu-price">
-                                <h4 class="price-clr">Ksh. 2,500</h4>
-                            </div>
-                            <div class="clearfix"></div>
-                            <p>Hard Icing</p>
-                        </div>
-                    </div>
-                </div>  <div class="d-flex border-bottom">
-                    <div class="col-md-6 agileinfo-tab-content1 border-right">
-                        <div class="menu-text-right1">
-                            <div class="menu-title">
-                                <h4>Strawberry</h4>
-                            </div>
-                            <div class="menu-price">
-                                <h4 class="price-clr">Ksh. 2,000</h4>
-                            </div>
-                            <div class="clearfix"></div>
-                            <p>Soft Icing</p>
-                        </div>
-                    </div>
-                    <div class="col-md-6 agileinfo-tab-content1">
-                        <div class="menu-text-right1">
-                            <div class="menu-title">
-                                <h4>Strawberry</h4>
-                            </div>
-                            <div class="menu-price">
-                                <h4 class="price-clr">Ksh. 2,500</h4>
-                            </div>
-                            <div class="clearfix"></div>
-                            <p>Hard Icing</p>
-                        </div>
-                    </div>
-                </div>  <div class="d-flex border-bottom">
-                    <div class="col-md-6 agileinfo-tab-content1 border-right">
-                        <div class="menu-text-right1">
-                            <div class="menu-title">
-                                <h4>Pinacolada</h4>
-                            </div>
-                            <div class="menu-price">
-                                <h4 class="price-clr">Ksh. 2,200</h4>
-                            </div>
-                            <div class="clearfix"></div>
-                            <p>Soft Icing</p>
-                        </div>
-                    </div>
-                    <div class="col-md-6 agileinfo-tab-content1">
-                        <div class="menu-text-right1">
-                            <div class="menu-title">
-                                <h4>Pinacolada</h4>
-                            </div>
-                            <div class="menu-price">
-                                <h4 class="price-clr">Ksh. 2,700</h4>
-                            </div>
-                            <div class="clearfix"></div>
-                            <p>Hard Icing</p>
-                        </div>
-                    </div>
-                </div>  <div class="d-flex border-bottom">
-                    <div class="col-md-6 agileinfo-tab-content1 border-right">
-                        <div class="menu-text-right1">
-                            <div class="menu-title">
-                                <h4>Blueberry</h4>
-                            </div>
-                            <div class="menu-price">
-                                <h4 class="price-clr">Ksh. 2,200</h4>
-                            </div>
-                            <div class="clearfix"></div>
-                            <p>Soft Icing</p>
-                        </div>
-                    </div>
-                    <div class="col-md-6 agileinfo-tab-content1">
-                        <div class="menu-text-right1">
-                            <div class="menu-title">
-                                <h4>Blueberry</h4>
-                            </div>
-                            <div class="menu-price">
-                                <h4 class="price-clr">Ksh. 2,700</h4>
-                            </div>
-                            <div class="clearfix"></div>
-                            <p>Hard Icing</p>
-                        </div>
-                    </div>
-                </div>  <div class="d-flex border-bottom">
-                    <div class="col-md-6 agileinfo-tab-content1 border-right">
-                        <div class="menu-text-right1">
-                            <div class="menu-title">
-                                <h4>Lemon Coconut</h4>
-                            </div>
-                            <div class="menu-price">
-                                <h4 class="price-clr">Ksh. 2,200</h4>
-                            </div>
-                            <div class="clearfix"></div>
-                            <p>Soft Icing</p>
-                        </div>
-                    </div>
-                    <div class="col-md-6 agileinfo-tab-content1">
-                        <div class="menu-text-right1">
-                            <div class="menu-title">
-                                <h4>Lemon Coconut</h4>
-                            </div>
-                            <div class="menu-price">
-                                <h4 class="price-clr">Ksh. 2,700</h4>
-                            </div>
-                            <div class="clearfix"></div>
-                            <p>Hard Icing</p>
-                        </div>
-                    </div>
-                </div>  <div class="d-flex border-bottom">
-                    <div class="col-md-6 agileinfo-tab-content1 border-right">
-                        <div class="menu-text-right1">
-                            <div class="menu-title">
-                                <h4>Lemon Blueberry</h4>
-                            </div>
-                            <div class="menu-price">
-                                <h4 class="price-clr">Ksh. 2,300</h4>
-                            </div>
-                            <div class="clearfix"></div>
-                            <p>Soft Icing</p>
-                        </div>
-                    </div>
-                    <div class="col-md-6 agileinfo-tab-content1">
-                        <div class="menu-text-right1">
-                            <div class="menu-title">
-                                <h4>Lemon Blueberry</h4>
-                            </div>
-                            <div class="menu-price">
-                                <h4 class="price-clr">Ksh. 2,900</h4>
-                            </div>
-                            <div class="clearfix"></div>
-                            <p>Hard Icing</p>
-                        </div>
-                    </div>
-                </div>  <div class="d-flex border-bottom">
-                    <div class="col-md-6 agileinfo-tab-content1 border-right">
-                        <div class="menu-text-right1">
-                            <div class="menu-title">
-                                <h4>Fruit Cake</h4>
-                            </div>
-                            <div class="menu-price">
-                                <h4 class="price-clr">Ksh. 2,800</h4>
-                            </div>
-                            <div class="clearfix"></div>
-                            <p>Soft Icing</p>
-                        </div>
-                    </div>
-                    <div class="col-md-6 agileinfo-tab-content1">
-                        <div class="menu-text-right1">
-                            <div class="menu-title">
-                                <h4>fruit Cake</h4>
-                            </div>
-                            <div class="menu-price">
-                                <h4 class="price-clr">Ksh. 3,300</h4>
-                            </div>
-                            <div class="clearfix"></div>
-                            <p>Hard Icing</p>
-                        </div>
-                    </div>
-            </div>
-          
-                <!-- Add more other cakes here -->
+                <!-- Macarons -->
+                <div class="product-item">
+                    <img src="images/macarons.jpg" alt="Macarons" class="product-image">
+                    <h4>Macarons</h4>
+                    <p>Half Dozen - Price: Ksh. 1,500</p>
+                    <p>Dozen - Price: Ksh. 2,000</p>
+                    <a href="https://wa.link/52g7l5" class="order-now-btn" style="font-weight: bold;" target="_blank">Order Now</a>
+                </div>
             </div>
         </div>
     </div>
@@ -412,22 +326,7 @@
 						<a href="https://www.facebook.com/p/Nimsy-Bakes-100069902658293/">
 							<span class="fab fa-facebook-f"></span>
 						</a>
-					</li>
-					<li class="mx-2">
-						<a href="#">
-							<span class="fab fa-twitter"></span>
-						</a>
-					</li>
-					<li>
-						<a href="#">
-							<span class="fas fa-rss"></span>
-						</a>
-					</li>
-					<li class="ml-2">
-						<a href="#">
-							<span class="fab fa-vk"></span>
-						</a>
-					</li>
+					</li>	
 				</ul>
 			</div>
 			<!-- //social icons -->
@@ -459,12 +358,12 @@
 					</li>
 					<li class="mx-4">
 						<p class="text-white">
-							<i class="fas fa-phone mr-2"></i>+254716168080</p>
+							<i class="fas fa-phone mr-2"></i><a href="tel:+254716168080" class="text-white">+254716168080</a></p>
 					</li>
 					<li>
 						<p class="text-white">
 							<i class="far fa-envelope-open mr-2"></i>
-							<a href="mailto:info@example.com" class="text-white">nashlizz63@gmail.com</a>
+							<a href="nashlizz63@gmail.com" class="text-white"> nashlizz63@gmail.com</a>
 						</p>
 					</li>
 				</ul>
@@ -477,7 +376,7 @@
 	<!-- copyright -->
 	<div class="w3l-copy text-center py-4">
 		<p class="text-white">© 2024 NIMSY BAKES. All rights reserved | Design by
-			<a href="https://kevahwebsolutions.github.io/.co.ke/">KEVAH WEB SOLUTIONS</a>
+			<a href="https://kevahwebsolutions.github.io/kelvin-njoroge.com/">KELVIN NJOROGE</a>
 		</p>
 	</div>
 	<!-- //copyright -->
@@ -505,6 +404,7 @@
 			});
 		});
 	</script>
+    
     <script>
         var url = 'https://wati-integration-prod-service.clare.ai/v2/watiWidget.js?6705';
         var s = document.createElement('script');
@@ -517,7 +417,7 @@
             "backgroundColor":"#00e785",
             "ctaText":"Chat with us",
             "borderRadius":"25",
-            "marginLeft": "0",
+            "marginLeft": "20",
             "marginRight": "20",
             "marginBottom": "20",
             "ctaIconWATI":false,
@@ -567,6 +467,18 @@
 
 	<!-- //Js files -->
 
+    <!-- JS (Optional for interactivity) -->
+<script>
+    // Example: Add interactivity (optional)
+    document.querySelectorAll('.product-item').forEach(function(item) {
+        item.addEventListener('mouseover', function() {
+            this.style.backgroundColor = '#f8f8f8';
+        });
+        item.addEventListener('mouseout', function() {
+            this.style.backgroundColor = '#fff';
+        });
+    });
+</script>
 </body>
 
 </html>
